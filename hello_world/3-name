@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -pie "$CFILE.c" "cisfun.c" 
+gcc -E "$CFILE" -o "cisfun"  
