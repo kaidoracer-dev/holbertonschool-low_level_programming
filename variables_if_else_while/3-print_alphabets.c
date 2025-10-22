@@ -9,20 +9,21 @@
 int main(void)
 {
 	char n = 'a';
+
 	char N = 'A';
-        
+
 	for (; n <= 'z'; n++)
 
 		putchar(n);
 
 
-        for (; N <= 'Z'; N++)
+	for (; N <= 'Z'; N++)
 
-                putchar(N);
+		putchar(N);
 
-        putchar('\n');
+	putchar('\n');
 
-        return (0);
+	return (0);
 
 
 }
