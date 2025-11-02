@@ -1,9 +1,10 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * _strcat - concatenate src to the end of dest
+ * _strncat - concatenates at most n characters from src to the end of dest
  * @dest: destination string
  * @src: source string
+ * @n: maximum number of characters to copy from src
  *
  * Return: pointer to dest
  */
