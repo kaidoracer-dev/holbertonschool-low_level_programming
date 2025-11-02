@@ -14,10 +14,10 @@ char *string_toupper(char *str)
 	{
 		i++;
 
-		if (str[i] >= 'a' && str[i] <= 'z')
-		
-				str[i] = str[i] - ('a' - 'A');
-		
+	if (str[i] >= 'a' && str[i] <= 'z')
+	{
+		str[i] = str[i] - ('a' - 'A');
+	}
 	}
 	return (str);
 }
