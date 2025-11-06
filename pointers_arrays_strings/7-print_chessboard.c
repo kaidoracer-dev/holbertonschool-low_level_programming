@@ -1,11 +1,11 @@
 #include "main.h"
 #include <stdio.h>
 /**
-* print_chessboard - that prints the chessboard
-* @a: pointer to an 8x8 array of characters
-* @i: the ligne of array
-* @j: the colonne of array
-*/
+ * print_chessboard - prints a chessboard
+ * @a: 2D array containing the chessboard pieces
+ *
+ * Return: void
+ */
 void print_chessboard(char (*a)[8])
 {
 	int i = 0;
@@ -15,7 +15,7 @@ void print_chessboard(char (*a)[8])
 	{
 		j = 0;
 
-		 while (j < 8)
+		while (j < 8)
 		{
 			_putchar (a[i][j]);
 			j++;
