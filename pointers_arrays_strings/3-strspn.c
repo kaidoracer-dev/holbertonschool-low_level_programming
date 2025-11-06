@@ -1,11 +1,13 @@
 #include "main.h"
 #include <stdio.h>
 /**
-* _strspn - gets the length of a prefix substring
-*@i: count the number of characters
-*@j: path the character chain
-* return the number of characters in the substring
-*/
+ * _strspn - gets the length of a prefix substring
+ * @s: string to search in
+ * @accept: string containing the characters to match
+ *
+ * Return: number of bytes in the initial segment of s
+ *         which consist only of bytes from accept
+ */
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int i = 0;
@@ -19,11 +21,11 @@ unsigned int _strspn(char *s, char *accept)
 		{
 			j++;
 		}
-		
+
 		if (*j == '\0')
 			break;
 
 		i++;
 	}
-	return i;
+	return (i);
 }
