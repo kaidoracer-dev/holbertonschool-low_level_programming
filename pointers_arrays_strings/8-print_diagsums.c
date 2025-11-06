@@ -13,8 +13,8 @@ void print_diagsums(int *a, int size)
 
 	while (i < size)
 	{
-		som1 += a[i* size + i];
-		som2 += a[i*size + (size-1-i)];
+		som1 += a[i * size + i];
+		som2 += a[i * size + (size - 1 - i)];
 		i++;
 	}
 	printf("%d, %d\n", som1, som2);
