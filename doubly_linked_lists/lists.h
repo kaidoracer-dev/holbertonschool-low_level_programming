@@ -1,6 +1,7 @@
-#include <stddef.h>
 #ifndef MAIN_H
 #define MAIN_H
+
+#include <stddef.h>
 
 /**
  * struct list_s - singly linked list
@@ -12,9 +13,9 @@
  */
 typedef struct list_s
 {
-    char *str;
-    unsigned int len;
-    struct list_s *next;
+char *str;
+unsigned int len;
+struct list_s *next;
 } list_t;
 
 /**
@@ -24,13 +25,13 @@ typedef struct list_s
  * @next: points to the next node
  *
  * Description: doubly linked list node structure
- * 
+ *
  */
 typedef struct dlistint_s
 {
-    int n;
-    struct dlistint_s *prev;
-    struct dlistint_s *next;
+int n;
+struct dlistint_s *prev;
+struct dlistint_s *next;
 } dlistint_t;
 
 int _putchar(char c);
