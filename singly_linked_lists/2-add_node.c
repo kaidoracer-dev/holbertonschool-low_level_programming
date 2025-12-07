@@ -10,8 +10,12 @@
  */
 list_t *add_node(list_t **head, const char *str)
 {
-	list_t *copy = malloc(sizeof(list_t));
+	list_t *copy;
 
+	if (head == NULL || str == NULL)
+		return (NULL);
+
+	copy = malloc(sizeof(list_t));
 	if (copy == NULL)
 	{
 		return (NULL);
@@ -20,6 +24,7 @@ list_t *add_node(list_t **head, const char *str)
 
 		if (copy->str == NULL)
 		{
+			free(copy);
 			return (NULL);
 		}
 		copy->len = strlen(str);
